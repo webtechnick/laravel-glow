@@ -1,0 +1,13 @@
+{
+    "name": "webtechnick/glow",
+    "description": "an army knife of tools",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nick Baker",
+            "email": "nick@webtechnick.com"
+        }
+    ],
+    "require": {}
+}
