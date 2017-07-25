@@ -1,7 +1,6 @@
 {
     "name": "webtechnick/laravel-glow",
     "description": "an army knife of tools for laravel",
-    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -25,10 +24,5 @@
         "psr-4": {
             "Tests\\": "tests/"
         }
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
