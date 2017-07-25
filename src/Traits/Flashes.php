@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Traits;
+namespace WebTechNick\LaravelGlow\Traits;
 
 trait Flashes {
 
