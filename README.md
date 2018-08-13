@@ -1,5 +1,9 @@
 # laravel-glow
 
+## Install
+
+`composer require webtechnick/laravel-glow`
+
 ## Traits
 
 1. Filterable
@@ -9,3 +13,6 @@
 ## Libs
 
 1. Cart
+
+
+
