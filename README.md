@@ -9,6 +9,7 @@
 1. Filterable
 2. Flashes
 3. UtilityScopes
+4. ToggleActivatable
 
 ## Libs
 
