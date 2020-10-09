@@ -21,14 +21,24 @@ trait Filterable
     public function scopeFilter($query, $term)
     {
         $filters = $this->getFilters();
+
         if (empty($filters)) {
             return $query;
         }
-        $query->where(function($query) use ($term, $filters){
+
+        $query->where(function($query) use ($term, $filters) {
             foreach ($filters as $column) {
-                $query->orWhere($column, 'LIKE', "%$term%");
+                if (strpos($column, '.')) {
+                    list($relation, $field) = explode('.', $column);
+                    $query->orWhereHas($relation, function($query) use ($field, $term) {
+                        $query->where($field, 'LIKE', "%$term%");
+                    });
+                } else {
+                    $query->orWhere($column, 'LIKE', "%$term%");
+                }
             }
         });
+
         return $query;
     }
 }
